@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video in text background</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .banner{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FFF;
+            font-size: 30vw;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000;
+            line-height: 100vh;
+            mix-blend-mode: screen;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loopS>
+            <source src="video (1080p).mp4">
+        </video>
+        <h2>Video</h2>
+    </div>
+</body>
+</html>
